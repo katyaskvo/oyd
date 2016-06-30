@@ -1,0 +1,29 @@
+@mixin font-basics{
+	font-weight: normal;
+	font-style: normal;
+}
+$san-francisco-font: -apple-system, Helvetica, Arial, sans-serif;
+
+@font-face {
+  font-family: 'CloudyWithaChanceofLove';
+  src: url('../fonts/cloudy/CloudyWithaChanceofLove.eot') format('embedded-opentype');
+  @include font-basics;
+}
+
+@font-face {
+  font-family: 'CloudyWithaChanceofLove';
+  src:  url('../fonts/cloudy/CloudyWithaChanceofLove.woff') format('woff'), url('../fonts/cloudy/CloudyWithaChanceofLove.ttf')  format('truetype'), url('../fonts/cloudy/CloudyWithaChanceofLove.svg#CloudyWithaChanceofLove') format('svg');
+  @include font-basics;
+}
+
+@font-face {
+  font-family: 'FuturaExtended';
+  src: url('../fonts/futura/FuturaExtended.eot') format('embedded-opentype');
+  @include font-basics;
+}
+
+@font-face {
+  font-family: 'FuturaExtended';
+  src:  url('../fonts/futura/FuturaExtended.woff') format('woff'), url('../fonts/futura/FuturaExtended.ttf')  format('truetype'), url('../fonts/futura/FuturaExtended.svg#FuturaExtended') format('svg');
+  @include font-basics;
+}

@@ -1,0 +1,16 @@
+
+@font-face {
+  font-family: 'CloudyWithaChanceofLove';
+  src: url('../fonts/cloudy/CloudyWithaChanceofLove.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CloudyWithaChanceofLove';
+  src:  url('../fonts/cloudy/CloudyWithaChanceofLove.woff') format('woff'), url('../fonts/cloudy/CloudyWithaChanceofLove.ttf')  format('truetype'), url('../fonts/cloudy/CloudyWithaChanceofLove.svg#CloudyWithaChanceofLove') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
