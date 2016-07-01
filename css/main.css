@@ -1,0 +1,197 @@
+/* v2.0 | 20110126
+  http://meyerweb.com/eric/tools/css/reset/ 
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'CloudyWithaChanceofLove';
+  src: url("../fonts/cloudy/CloudyWithaChanceofLove.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'CloudyWithaChanceofLove';
+  src: url("../fonts/cloudy/CloudyWithaChanceofLove.woff") format("woff"), url("../fonts/cloudy/CloudyWithaChanceofLove.ttf") format("truetype"), url("../fonts/cloudy/CloudyWithaChanceofLove.svg#CloudyWithaChanceofLove") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'FuturaExtended';
+  src: url("../fonts/futura/FuturaExtended.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'FuturaExtended';
+  src: url("../fonts/futura/FuturaExtended.woff") format("woff"), url("../fonts/futura/FuturaExtended.ttf") format("truetype"), url("../fonts/futura/FuturaExtended.svg#FuturaExtended") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  background: #FFDE17;
+  font-family: -apple-system, Helvetica, Arial, sans-serif;
+  background: url("../img/splatter.svg"), url("../img/splatter.svg"), url("../img/splatter.svg");
+  background-size: 1250px auto, 900px auto, 900px auto;
+  background-position: center 10px, left -500px bottom -10px, right -500px bottom -10px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-color: #FFDE17;
+  font-size: 62.5%;
+  text-align: center; }
+
+header {
+  margin: 20px; }
+
+.oyd-logo {
+  width: 160px;
+  height: 95px;
+  background: url("../img/game_logo.png") center center no-repeat transparent;
+  background-size: 160px 95px;
+  text-indent: -999999px;
+  margin: 0 auto; }
+
+h2 {
+  /* NOW AVAILABLE: */
+  font-family: "CloudyWithaChanceofLove", Helvetica, sans-serif;
+  font-size: 3em;
+  color: #FFF;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 0px 2px 4px #000;
+  margin: 1rem 0; }
+
+.download {
+  margin: 4em 0px; }
+  .download .app-icon {
+    height: 200px;
+    width: 200px;
+    display: block;
+    border: 4px solid #000;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.5);
+    margin: 0 auto 4em auto; }
+  .download .download-buttons {
+    text-align: center; }
+  .download .button {
+    padding: 0 1rem; }
+    .download .button img {
+      width: 122px;
+      height: auto;
+      vertical-align: middle; }
+    .download .button:first-child {
+      margin-right: 3em; }
+
+.button {
+  height: 3em;
+  line-height: 3em;
+  padding: 0 1.6rem;
+  background: #000;
+  border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.6em; }
+
+.container {
+  position: relative;
+  background: #000;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.5);
+  margin: 4em 0; }
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #000;
+  box-sizing: border-box; }
+
+footer {
+  margin: 4em 0 0 0;
+  padding: 1.6rem;
+  background: #000;
+  color: #FFF; }
+  footer .dead-giblet {
+    width: 100px;
+    margin: 1rem; }
+
+.social-links li {
+  display: inline;
+  margin: 0 6.8px; }
+
+.social-links a {
+  color: #FFF; }
+
+.social-links img {
+  height: 34px;
+  width: auto; }
+
+.signal-zero-link {
+  font-family: 'FuturaExtended', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 3px;
+  line-height: 1.5; }
+  .signal-zero-link span {
+    font-size: 1.5em;
+    letter-spacing: 3.5px; }
+  .signal-zero-link a {
+    color: #FFF;
+    text-decoration: none; }
+    .signal-zero-link a > img {
+      width: 27.2px;
+      margin-top: 10.2px;
+      vertical-align: middle; }
+
+/*# sourceMappingURL=main.css.map */
