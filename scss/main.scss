@@ -8,10 +8,9 @@ $white: #FFF;
 $gray: #575757;
 $text-shadow: 0px 2px 4px $black;
 $box-shadow: 0px 2px 4px 0 rgba(0,0,0,0.5);
-$margin-unit: 4em;
+$margin-unit: 40px;
 
 body{
-	background: $yellow;
 	font-family: $san-francisco-font;
 	background: url("../img/splatter.svg"), url("../img/splatter.svg"), url("../img/splatter.svg");
 	background-size: 1250px auto, 900px auto, 900px auto;
@@ -34,8 +33,8 @@ header {
 	text-indent: -999999px;
 	margin: 0 auto;
 }
+/* NOW AVAILABLE: */
 h2 {
-	/* NOW AVAILABLE: */
 	font-family: "CloudyWithaChanceofLove", Helvetica, sans-serif;
 	font-size: 3em;
 	color: $white;
@@ -64,18 +63,23 @@ h2 {
 	.download-buttons {
 		text-align: center;
 	}
-	.button {			
-		padding: 0 1rem;
+	.button {
+		$height: 48px;
+		width: 146px;
+		padding: 0 10px;
+		height: $height;
+		line-height: $height;
+		box-sizing: border-box;
+		position: relative;
 		img {
-			width: 122px;
+			width: 100%;
 			height: auto;
 			vertical-align: middle;
 		}
 		&:first-child {
-			margin-right: $margin-unit - 1em;
+			margin-right: $margin-unit - 10px;
 		}
-	}
-	
+	}	
 }
 .button {
 	$height: 3em;
@@ -158,5 +162,43 @@ $icon-size: 34px;
 			 margin-top: $icon-size * 0.3;
 			 vertical-align: middle;
 		 }
+	}
+}
+
+@media screen and (min-width: 568px) {
+	body{
+		background-size: 1300px auto, 900px auto, 900px auto;
+		background-position: left calc(50% - 120px) top 0, left -500px bottom -10px, right -500px bottom -10px;
+	}
+	.download {
+		margin: $margin-unit auto;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		height: auto;
+		position: relative;
+	
+		.app-icon {
+			margin: 0 $margin-unit;
+		}
+		.download-buttons {
+			margin: 0 $margin-unit;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;	
+			height: auto;
+		}
+		.button {	
+			$height: 65px;		
+			width: 200px;
+			height: $height;
+			line-height: $height;
+			padding: 0 15px;
+			&:first-child {
+				margin-right: 0;
+				margin-bottom: $margin-unit;
+			}
+		}
+		
 	}
 }

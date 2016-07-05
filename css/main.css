@@ -70,7 +70,6 @@ table {
   font-style: normal; }
 
 body {
-  background: #FFDE17;
   font-family: -apple-system, Helvetica, Arial, sans-serif;
   background: url("../img/splatter.svg"), url("../img/splatter.svg"), url("../img/splatter.svg");
   background-size: 1250px auto, 900px auto, 900px auto;
@@ -91,8 +90,8 @@ header {
   text-indent: -999999px;
   margin: 0 auto; }
 
+/* NOW AVAILABLE: */
 h2 {
-  /* NOW AVAILABLE: */
   font-family: "CloudyWithaChanceofLove", Helvetica, sans-serif;
   font-size: 3em;
   color: #FFF;
@@ -102,7 +101,7 @@ h2 {
   margin: 1rem 0; }
 
 .download {
-  margin: 4em 0px; }
+  margin: 40px 0px; }
   .download .app-icon {
     height: 200px;
     width: 200px;
@@ -112,17 +111,22 @@ h2 {
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.5);
-    margin: 0 auto 4em auto; }
+    margin: 0 auto 40px auto; }
   .download .download-buttons {
     text-align: center; }
   .download .button {
-    padding: 0 1rem; }
+    width: 146px;
+    padding: 0 10px;
+    height: 48px;
+    line-height: 48px;
+    box-sizing: border-box;
+    position: relative; }
     .download .button img {
-      width: 122px;
+      width: 100%;
       height: auto;
       vertical-align: middle; }
     .download .button:first-child {
-      margin-right: 3em; }
+      margin-right: 30px; }
 
 .button {
   height: 3em;
@@ -146,7 +150,7 @@ h2 {
   height: 0;
   padding-bottom: 56.25%;
   box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.5);
-  margin: 4em 0; }
+  margin: 40px 0; }
 
 .video {
   position: absolute;
@@ -158,7 +162,7 @@ h2 {
   box-sizing: border-box; }
 
 footer {
-  margin: 4em 0 0 0;
+  margin: 40px 0 0 0;
   padding: 1.6rem;
   background: #000;
   color: #FFF; }
@@ -193,5 +197,33 @@ footer {
       width: 27.2px;
       margin-top: 10.2px;
       vertical-align: middle; }
+
+@media screen and (min-width: 568px) {
+  body {
+    background-size: 1300px auto, 900px auto, 900px auto;
+    background-position: left calc(50% - 120px) top 0, left -500px bottom -10px, right -500px bottom -10px; }
+  .download {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    position: relative; }
+    .download .app-icon {
+      margin: 0 40px; }
+    .download .download-buttons {
+      margin: 0 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: auto; }
+    .download .button {
+      width: 200px;
+      height: 65px;
+      line-height: 65px;
+      padding: 0 15px; }
+      .download .button:first-child {
+        margin-right: 0;
+        margin-bottom: 40px; } }
 
 /*# sourceMappingURL=main.css.map */
