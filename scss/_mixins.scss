@@ -3,3 +3,11 @@
 	-moz-border-radius: $radius;
 	-webkit-border-radius: $radius;
 }
+	
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

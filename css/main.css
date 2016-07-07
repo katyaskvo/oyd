@@ -165,7 +165,12 @@ footer {
   margin: 40px 0 0 0;
   padding: 1.6rem;
   background: #000;
-  color: #FFF; }
+  color: #FFF;
+  position: relative; }
+  footer:after {
+    content: "";
+    display: table;
+    clear: both; }
   footer .dead-giblet {
     width: 100px;
     margin: 1rem; }
@@ -200,8 +205,8 @@ footer {
 
 @media screen and (min-width: 568px) {
   body {
-    background-size: 1300px auto, 900px auto, 900px auto;
-    background-position: left calc(50% - 120px) top 0, left -500px bottom -10px, right -500px bottom -10px; }
+    background-size: 1300px auto, 800px auto, 800px auto;
+    background-position: left calc(50% - 120px) top 0, left -400px bottom -140px, right -440px bottom -110px; }
   .download {
     margin: 40px auto;
     display: flex;
@@ -221,9 +226,46 @@ footer {
       width: 200px;
       height: 65px;
       line-height: 65px;
-      padding: 0 15px; }
+      padding: 0 1rem; }
       .download .button:first-child {
         margin-right: 0;
-        margin-bottom: 40px; } }
+        margin-bottom: 40px; }
+  footer {
+    margin: 40px 0 0 0;
+    padding: 1.6rem; }
+    footer .dead-giblet {
+      height: 55px;
+      margin: 0;
+      float: left; }
+    footer .social-links {
+      float: right; }
+      footer .social-links li, footer .social-links a {
+        display: inline-block; }
+      footer .social-links li {
+        margin: 0 6px; }
+      footer .social-links a {
+        height: 30px;
+        line-height: 55px; }
+      footer .social-links img {
+        height: 30px;
+        width: auto;
+        vertical-align: middle; }
+    footer .signal-zero-link {
+      width: 200px;
+      height: 55px;
+      position: absolute;
+      left: 50%;
+      margin-left: -100px;
+      display: table; }
+      footer .signal-zero-link a {
+        position: relative;
+        display: table-cell;
+        vertical-align: middle; }
+        footer .signal-zero-link a > img {
+          position: absolute;
+          left: 0px;
+          margin-left: 0px;
+          top: 50%;
+          margin-top: -15px; } }
 
 /*# sourceMappingURL=main.css.map */

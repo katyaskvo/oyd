@@ -117,12 +117,15 @@ h2 {
 }
 
 
+// Footer
 footer {
 	$padding-unit: 2rem;
 	margin: $margin-unit 0 0 0;
 	padding: 1.6rem;
 	background: $black;
 	color: $white;
+	position: relative;
+	@include clearfix;
 	.dead-giblet {
 		width: 100px;
 		margin: 1rem;
@@ -167,8 +170,8 @@ $icon-size: 34px;
 
 @media screen and (min-width: 568px) {
 	body{
-		background-size: 1300px auto, 900px auto, 900px auto;
-		background-position: left calc(50% - 120px) top 0, left -500px bottom -10px, right -500px bottom -10px;
+		background-size: 1300px auto, 800px auto, 800px auto;
+		background-position: left calc(50% - 120px) top 0, left -400px bottom -140px, right -440px bottom -110px;
 	}
 	.download {
 		margin: $margin-unit auto;
@@ -193,12 +196,63 @@ $icon-size: 34px;
 			width: 200px;
 			height: $height;
 			line-height: $height;
-			padding: 0 15px;
+			padding: 0 1rem;
 			&:first-child {
 				margin-right: 0;
 				margin-bottom: $margin-unit;
 			}
-		}
-		
+		}	
 	}
+	footer {
+		$height: 55px;
+		$padding-unit: 1.6rem;
+		$icon-size: 30px;
+		margin: $margin-unit 0 0 0;
+		padding: $padding-unit;
+		.dead-giblet {
+			height: $height;
+			margin: 0;
+			float: left;
+		}
+		.social-links {
+			float: right;
+			li, a {
+				display: inline-block;
+			}
+			li {
+				margin: 0 $icon-size / 5;
+			}
+			a {
+				height: $icon-size;
+				line-height: $height;
+			}
+			img {
+				height: $icon-size;
+				width: auto;
+				vertical-align: middle;
+			}
+		}
+		.signal-zero-link {
+			$width: 200px;
+			width: $width;
+			height: $height;
+			position: absolute;
+			left: 50%;
+			margin-left: - ($width / 2);
+			display: table;
+			a {
+				position: relative;
+				display: table-cell;
+				vertical-align: middle;
+				 > img {
+					 position: absolute;
+					 left: 0px;
+					 margin-left: 0px;
+					 top: 50%;
+					 margin-top: -($icon-size / 2);
+				 }
+			}
+		}
+	}
+	
 }
