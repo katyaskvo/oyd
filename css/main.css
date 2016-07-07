@@ -78,6 +78,14 @@ body {
   background-color: #FFDE17;
   font-size: 62.5%;
   text-align: center; }
+  @media only screen and (min-width: 568px) {
+    body {
+      background-size: 1300px auto, 800px auto, 800px auto;
+      background-position: left calc(50% - 120px) top 0, left -400px bottom -140px, right -440px bottom -110px; } }
+  @media only screen and (min-width: 1200px) {
+    body {
+      background-size: 1400px auto, 1100px auto, 1100px auto;
+      background-position: left calc(50% - 120px) top 20px, left -400px bottom -260px, right -600px bottom -200px; } }
 
 header {
   margin: 20px; }
@@ -89,6 +97,11 @@ header {
   background-size: 160px 95px;
   text-indent: -999999px;
   margin: 0 auto; }
+  @media only screen and (min-width: 1200px) {
+    .oyd-logo {
+      width: 224px;
+      height: 135px;
+      background-size: 224px 135px; } }
 
 /* NOW AVAILABLE: */
 h2 {
@@ -99,9 +112,20 @@ h2 {
   text-transform: uppercase;
   text-shadow: 2px 2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 0px 2px 4px #000;
   margin: 1rem 0; }
+  @media only screen and (min-width: 1200px) {
+    h2 {
+      font-size: 4em; } }
 
 .download {
   margin: 40px 0px; }
+  @media only screen and (min-width: 568px) {
+    .download {
+      margin: 40px auto;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      position: relative; } }
   .download .app-icon {
     height: 200px;
     width: 200px;
@@ -112,8 +136,18 @@ h2 {
     -webkit-border-radius: 50px;
     box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.5);
     margin: 0 auto 40px auto; }
+    @media only screen and (min-width: 568px) {
+      .download .app-icon {
+        margin: 0 40px; } }
   .download .download-buttons {
     text-align: center; }
+    @media only screen and (min-width: 568px) {
+      .download .download-buttons {
+        margin: 0 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto; } }
   .download .button {
     width: 146px;
     padding: 0 10px;
@@ -127,6 +161,15 @@ h2 {
       vertical-align: middle; }
     .download .button:first-child {
       margin-right: 30px; }
+    @media only screen and (min-width: 568px) {
+      .download .button {
+        width: 200px;
+        height: 65px;
+        line-height: 65px;
+        padding: 0 1rem; }
+        .download .button:first-child {
+          margin-right: 0;
+          margin-bottom: 40px; } }
 
 .button {
   height: 3em;
@@ -171,101 +214,71 @@ footer {
     content: "";
     display: table;
     clear: both; }
+  footer .social-links li {
+    display: inline;
+    margin: 0 6.8px; }
+  footer .social-links a {
+    color: #FFF; }
+  footer .social-links img {
+    height: 34px;
+    width: auto; }
+  footer .signal-zero-link {
+    font-family: 'FuturaExtended', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 3px;
+    line-height: 1.5; }
+    footer .signal-zero-link span {
+      font-size: 1.5em;
+      letter-spacing: 3.5px; }
+    footer .signal-zero-link a {
+      color: #FFF;
+      text-decoration: none; }
+      footer .signal-zero-link a > img {
+        width: 27.2px;
+        margin-top: 10.2px;
+        vertical-align: middle; }
   footer .dead-giblet {
     width: 100px;
     margin: 1rem; }
-
-.social-links li {
-  display: inline;
-  margin: 0 6.8px; }
-
-.social-links a {
-  color: #FFF; }
-
-.social-links img {
-  height: 34px;
-  width: auto; }
-
-.signal-zero-link {
-  font-family: 'FuturaExtended', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 0.8em;
-  letter-spacing: 3px;
-  line-height: 1.5; }
-  .signal-zero-link span {
-    font-size: 1.5em;
-    letter-spacing: 3.5px; }
-  .signal-zero-link a {
-    color: #FFF;
-    text-decoration: none; }
-    .signal-zero-link a > img {
-      width: 27.2px;
-      margin-top: 10.2px;
-      vertical-align: middle; }
-
-@media screen and (min-width: 568px) {
-  body {
-    background-size: 1300px auto, 800px auto, 800px auto;
-    background-position: left calc(50% - 120px) top 0, left -400px bottom -140px, right -440px bottom -110px; }
-  .download {
-    margin: 40px auto;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    position: relative; }
-    .download .app-icon {
-      margin: 0 40px; }
-    .download .download-buttons {
-      margin: 0 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: auto; }
-    .download .button {
-      width: 200px;
-      height: 65px;
-      line-height: 65px;
-      padding: 0 1rem; }
-      .download .button:first-child {
-        margin-right: 0;
-        margin-bottom: 40px; }
-  footer {
-    margin: 40px 0 0 0;
-    padding: 1.6rem; }
-    footer .dead-giblet {
-      height: 55px;
-      margin: 0;
-      float: left; }
-    footer .social-links {
-      float: right; }
-      footer .social-links li, footer .social-links a {
-        display: inline-block; }
-      footer .social-links li {
-        margin: 0 6px; }
-      footer .social-links a {
-        height: 30px;
-        line-height: 55px; }
-      footer .social-links img {
-        height: 30px;
+  @media only screen and (min-width: 568px) {
+    footer {
+      margin: 40px 0 0 0;
+      padding: 1.6rem; }
+      footer .dead-giblet {
+        height: 55px;
         width: auto;
-        vertical-align: middle; }
-    footer .signal-zero-link {
-      width: 200px;
-      height: 55px;
-      position: absolute;
-      left: 50%;
-      margin-left: -100px;
-      display: table; }
-      footer .signal-zero-link a {
-        position: relative;
-        display: table-cell;
-        vertical-align: middle; }
-        footer .signal-zero-link a > img {
-          position: absolute;
-          left: 0px;
-          margin-left: 0px;
-          top: 50%;
-          margin-top: -15px; } }
+        margin: 0;
+        float: left; }
+      footer .social-links {
+        float: right; }
+        footer .social-links li, footer .social-links a {
+          display: inline-block; }
+        footer .social-links li {
+          margin: 0 6px; }
+        footer .social-links a {
+          height: 30px;
+          line-height: 55px; }
+        footer .social-links img {
+          height: 30px;
+          width: auto;
+          vertical-align: middle; }
+      footer .signal-zero-link {
+        width: 200px;
+        height: 55px;
+        position: absolute;
+        left: 50%;
+        margin-left: -100px;
+        display: table; }
+        footer .signal-zero-link a {
+          position: relative;
+          display: table-cell;
+          vertical-align: middle; }
+          footer .signal-zero-link a > img {
+            position: absolute;
+            left: 0px;
+            margin-left: 0px;
+            top: 50%;
+            margin-top: -15px; } }
 
 /*# sourceMappingURL=main.css.map */
