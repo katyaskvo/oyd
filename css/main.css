@@ -254,8 +254,8 @@ footer {
   footer .social-links svg {
     height: 34px;
     width: auto; }
-  footer .social-links svg path {
-    fill: #FFF; }
+    footer .social-links svg path {
+      fill: #FFF; }
   footer .signal-zero-link {
     font-family: 'FuturaExtended', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
@@ -295,7 +295,7 @@ footer {
         footer .social-links li, footer .social-links a {
           display: inline-block; }
         footer .social-links li {
-          margin: 0 6px; }
+          margin: 0 5px; }
         footer .social-links a {
           height: 30px;
           line-height: 55px; }

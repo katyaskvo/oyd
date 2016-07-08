@@ -236,8 +236,6 @@ footer {
 		svg {
 			height: $icon-size;
 			width: auto;
-		}
-		svg {
 			path {
 				fill: $white;
 			}
@@ -292,11 +290,12 @@ footer {
 		}
 		.social-links {
 			float: right;
+			
 			li, a {
 				display: inline-block;
 			}
 			li {
-				margin: 0 $icon-size / 5;
+				margin: 0 $icon-size / 6;
 			}
 			a {
 				height: $icon-size;
