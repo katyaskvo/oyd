@@ -17,7 +17,11 @@
     @content;
   }
 }
-
+@mixin bp-portrait-6 {
+  @media only screen and (min-width: 374px) {
+    @content;
+  }
+}
 @mixin bp-landscape {
   @media only screen and (min-width: 568px) {
     @content;

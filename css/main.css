@@ -124,7 +124,10 @@ h2 {
       font-size: 4em; } }
 
 .download {
-  margin: 40px 0px; }
+  margin: 26.66667px 0px; }
+  @media only screen and (min-width: 374px) {
+    .download {
+      margin: 40px 0px; } }
   @media only screen and (min-width: 568px) {
     .download {
       margin: 40px auto;
@@ -156,10 +159,10 @@ h2 {
         justify-content: center;
         height: auto; } }
   .download .button {
-    width: 146px;
+    width: 130px;
     padding: 0 10px;
-    height: 48px;
-    line-height: 48px;
+    height: 43px;
+    line-height: 43px;
     box-sizing: border-box;
     position: relative; }
     .download .button img {
@@ -167,7 +170,15 @@ h2 {
       height: auto;
       vertical-align: middle; }
     .download .button:first-child {
-      margin-right: 30px; }
+      margin-right: 16.66667px; }
+    @media only screen and (min-width: 374px) {
+      .download .button {
+        width: 146px;
+        padding: 0 10px;
+        height: 48px;
+        line-height: 48px; }
+        .download .button:first-child {
+          margin-right: 30px; } }
     @media only screen and (min-width: 568px) {
       .download .button {
         width: 200px;

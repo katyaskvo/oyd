@@ -78,7 +78,11 @@ h2 {
 	}		     
 }
 .download {
-	margin: $margin-unit 0px;
+	margin: $margin-unit/1.5 0px;
+	
+	@include bp-portrait-6 {
+		margin: $margin-unit 0px;
+	}
 	
 	@include bp-landscape {
 		margin: $margin-unit auto;
@@ -114,8 +118,8 @@ h2 {
 		}
 	}
 	.button {
-		$height: 48px;
-		width: 146px;
+		$height: 43px;
+		width: 130px;
 		padding: 0 10px;
 		height: $height;
 		line-height: $height;
@@ -127,9 +131,18 @@ h2 {
 			vertical-align: middle;
 		}
 		&:first-child {
-			margin-right: $margin-unit - 10px;
+			margin-right: $margin-unit/1.5 - 10px;
 		}
-		
+		@include bp-portrait-6 {
+			$height: 48px;
+			width: 146px;
+			padding: 0 10px;
+			height: $height;
+			line-height: $height;
+			&:first-child {
+				margin-right: $margin-unit - 10px;
+			}
+		}
 		@include bp-landscape {
 			$height: 65px;		
 			width: 200px;
