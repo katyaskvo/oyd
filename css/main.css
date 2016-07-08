@@ -69,6 +69,13 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+body, .oyd-logo, h2, .dead-giblet, .button {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
 body {
   font-family: -apple-system, Helvetica, Arial, sans-serif;
   background: url("../img/splatter.svg"), url("../img/splatter.svg"), url("../img/splatter.svg");
@@ -185,6 +192,8 @@ h2 {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 1.6em; }
+  .button:hover {
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.5); }
 
 .container {
   position: relative;
@@ -214,14 +223,28 @@ footer {
     content: "";
     display: table;
     clear: both; }
+  footer a, footer svg path {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
   footer .social-links li {
     display: inline;
     margin: 0 6.8px; }
   footer .social-links a {
     color: #FFF; }
-  footer .social-links img {
+    footer .social-links a:hover .youtube #tube path {
+      fill: #DF2A26; }
+    footer .social-links a:hover .facebook path {
+      fill: #3b5998; }
+    footer .social-links a:hover .twitter path {
+      fill: #1da1f2; }
+  footer .social-links svg {
     height: 34px;
     width: auto; }
+  footer .social-links svg path {
+    fill: #FFF; }
   footer .signal-zero-link {
     font-family: 'FuturaExtended', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
@@ -234,10 +257,16 @@ footer {
     footer .signal-zero-link a {
       color: #FFF;
       text-decoration: none; }
-      footer .signal-zero-link a > img {
+      footer .signal-zero-link a > svg {
         width: 27.2px;
         margin-top: 10.2px;
         vertical-align: middle; }
+      footer .signal-zero-link a .signal-zero path {
+        fill: #FFF; }
+      footer .signal-zero-link a:hover {
+        color: #FF2600; }
+        footer .signal-zero-link a:hover .signal-zero path {
+          fill: #FF2600; }
   footer .dead-giblet {
     width: 100px;
     margin: 1rem; }
@@ -259,7 +288,7 @@ footer {
         footer .social-links a {
           height: 30px;
           line-height: 55px; }
-        footer .social-links img {
+        footer .social-links svg {
           height: 30px;
           width: auto;
           vertical-align: middle; }
@@ -274,7 +303,7 @@ footer {
           position: relative;
           display: table-cell;
           vertical-align: middle; }
-          footer .signal-zero-link a > img {
+          footer .signal-zero-link a > svg {
             position: absolute;
             left: 0px;
             margin-left: 0px;

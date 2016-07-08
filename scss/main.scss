@@ -5,12 +5,20 @@
 $yellow: #FFDE17;
 $black: #000;
 $white: #FFF;
+$pink: #FF6A5E;
+$red: #FF2600;
 $gray: #575757;
+$youtube-color: #DF2A26;
+$facebook-color: #3b5998;
+$twitter-color: #1da1f2;
 $text-shadow: 0px 2px 4px $black;
 $box-shadow: 0px 2px 4px 0 rgba(0,0,0,0.5);
 $margin-unit: 40px;
 $border-black: 4px solid $black;
 
+body, .oyd-logo, h2, .dead-giblet, .button  {
+		@include transition(all .3s ease);
+}
 body{
 	font-family: $san-francisco-font;
 	background: url("../img/splatter.svg"), url("../img/splatter.svg"), url("../img/splatter.svg");
@@ -150,6 +158,9 @@ h2 {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 1.6em;
+	&:hover {
+		box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.5)
+	}
 }
 
 // Youtube video
@@ -183,7 +194,9 @@ footer {
 	color: $white;
 	position: relative;
 	@include clearfix;
-	
+	a, svg path,  {
+		@include transition(all .3s ease);
+	}	
 	.social-links {
 		li {
 			display: inline;
@@ -191,10 +204,32 @@ footer {
 		}
 		a {
 			color: $white;
+			&:hover {
+				.youtube {
+					#tube path {
+						fill: $youtube-color;
+					}
+				}
+				.facebook {
+					path {
+						fill: $facebook-color;
+					}
+				}
+				.twitter {
+					path {
+						fill: $twitter-color;
+					}
+				}
+			}
 		}
-		img {
+		svg {
 			height: $icon-size;
 			width: auto;
+		}
+		svg {
+			path {
+				fill: $white;
+			}
 		}
 	}
 	.signal-zero-link {
@@ -210,12 +245,21 @@ footer {
 		a {
 			color: $white;
 			text-decoration: none;
-			
-			 > img {
+			 > svg {
+				 
 				 width: $icon-size * 0.8;
 				 margin-top: $icon-size * 0.3;
 				 vertical-align: middle;
 			 }
+			.signal-zero path {
+				fill: $white;
+			}
+			&:hover {
+				color: $red;
+				.signal-zero path {
+					fill: $red;
+				}
+			}
 		}
 	}
 	.dead-giblet {
@@ -247,7 +291,7 @@ footer {
 				height: $icon-size;
 				line-height: $height;
 			}
-			img {
+			svg {
 				height: $icon-size;
 				width: auto;
 				vertical-align: middle;
@@ -265,7 +309,7 @@ footer {
 				position: relative;
 				display: table-cell;
 				vertical-align: middle;
-				 > img {
+				 > svg {
 					 position: absolute;
 					 left: 0px;
 					 margin-left: 0px;
