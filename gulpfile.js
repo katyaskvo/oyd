@@ -26,7 +26,7 @@ gulp.task('watchFiles', function(){
 gulp.task('serve', ['watchFiles']);
 
 gulp.task('build', ['compileSass'], function(){
-	return gulp.src(['css/main.css', 'index.html', 'img/**', 'fonts/**'], { base: './' })
+	return gulp.src(['css/*', 'index.html', 'img/**', 'fonts/**', 'js/**'], { base: './' })
 	.pipe(gulp.dest('dist'));
 });
 gulp.task('default', ['clean'], function(){
