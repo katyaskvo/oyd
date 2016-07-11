@@ -119,8 +119,8 @@ h2 {
   text-transform: uppercase;
   text-shadow: 2px 2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 0px 2px 4px #000;
   margin: 1rem 0;
-  animation-delay: 0.5s;
-  -webkit-animation-delay: 0.5s; }
+  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s; }
   @media only screen and (min-width: 1200px) {
     h2 {
       font-size: 4em; } }
@@ -246,7 +246,11 @@ footer {
     display: inline;
     margin: 0 6.8px; }
   footer .social-links a {
-    color: #FFF; }
+    color: #FFF;
+    height: 34px;
+    width: 34px; }
+    footer .social-links a.youtube-link {
+      width: 81.6px; }
     footer .social-links a:hover .youtube #tube path {
       fill: #DF2A26; }
     footer .social-links a:hover .facebook path {
@@ -301,7 +305,10 @@ footer {
           margin: 0 5px; }
         footer .social-links a {
           height: 30px;
+          width: 30px;
           line-height: 55px; }
+          footer .social-links a.youtube-link {
+            width: 72px; }
         footer .social-links svg {
           height: 30px;
           width: auto;
