@@ -15,6 +15,8 @@ $text-shadow: 0px 2px 4px $black;
 $box-shadow: 0px 2px 4px 0 rgba(0,0,0,0.5);
 $margin-unit: 40px;
 $border-black: 4px solid $black;
+$youtube-video-max-width: 1200px;
+
 
 body, .oyd-logo, h2, .dead-giblet, .button  {
 		@include transition(all .3s ease);
@@ -177,13 +179,23 @@ h2 {
 }
 
 // Youtube video
+.youtube-video {
+	background: $black;
+	width: 100%;
+    box-shadow: $box-shadow;
+	
+	.width-wrapper {
+		width: 100%;
+		max-width: $youtube-video-max-width;
+		margin: 0 auto;
+	}
+}
 .container {
     position: relative;
     background: $black;
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
-    box-shadow: $box-shadow;
     margin: $margin-unit 0;
 }
 .video {
